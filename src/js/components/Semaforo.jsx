@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import '../../styles/styleTrafficLight.css'
 
 export const Semaforo = () => {
-    
+
     const [Color, setColor] = useState("red")
 
     const selectLight = (e)=>{
@@ -17,7 +17,7 @@ export const Semaforo = () => {
     }
 
     return (
-        <div className='mt-5'>
+        <div className='mt-5 d-flex justify-content-center'>
             <div className='semaforo'>
                 <div className='red Light' onClick={selectLight}></div>
 
